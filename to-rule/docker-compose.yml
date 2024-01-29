@@ -1,0 +1,16 @@
+version: "3.8"
+
+services:
+  to-rule:
+    container_name: toRule
+    build:
+      context: ./
+    ports:
+      - 3000:3000
+    volumes:
+      - ./:/usr/src/to-rule
+    restart: unless-stopped
+
+volumes:
+  database-volume:
+    driver: local
