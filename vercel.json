@@ -5,9 +5,6 @@
         "use": "@vercel/node"
       }
     ],
-    "routes": [
-      { "src": "/(.*)", "dest": "./to-rule" }
-    ],
     "rewrites": [
         {"source": "/(.*)", "destination": "./to-rule"}
     ]
