@@ -2,7 +2,7 @@
 FROM node:latest
 
 # Set the working directory in the container
-WORKDIR /usr/src/to-rule
+WORKDIR /usr/src/next-app/to-rule
 
 # Copy package.json and package-lock.json to the container
 # COPY ./package*.json ./
