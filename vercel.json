@@ -1,6 +1,13 @@
 {
-    "rewrites": [
-        {"source": "/(.*)", "destination": "/"}
+    "builds": [
+      {
+        "src": "to-rule/package.json",
+        "use": "@vercel/node"
+      }
+    ],
+    "routes": [
+      { "src": "/(.*)", "dest": "to-rule" }
     ]
-}
+  }
+  
 
