@@ -1,12 +1,12 @@
 {
     "builds": [
       {
-        "src": "to-rule/package.json",
+        "src": "./to-rule/package.json",
         "use": "@vercel/node"
       }
     ],
     "routes": [
-      { "src": "/(.*)", "dest": "to-rule" }
+      { "src": "/(.*)", "dest": "./to-rule" }
     ]
   }
   
