@@ -2,13 +2,13 @@ version: "3.8"
 
 services:
   to-rule:
-    container_name: toRule
+    container_name: to-rule
     build:
       context: ./
     ports:
       - 3000:3000
     volumes:
-      - ./:/usr/src/to-rule
+      - ./:/usr/src/next-app
     restart: unless-stopped
 
 volumes:

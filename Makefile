@@ -1,6 +1,6 @@
 NAME = to-rule
 DOCKER = docker
-COMPOSE = ${DOCKER} compose -p ${NAME} -f ./to-rule/docker-compose.yml
+COMPOSE = ${DOCKER} compose -p ${NAME} -f ./docker-compose.yml
 
 all: up
 
